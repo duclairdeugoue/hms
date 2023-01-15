@@ -1,0 +1,28 @@
+#-------------------------
+# Composer
+#-------------------------
+/vendor
+
+#-------------------------
+# Temporary Files
+#-------------------------
+/writable/cache/*
+
+writable/logs/*
+!writable/logs/index.html
+
+writable/session/*
+!writable/session/index.html
+
+writable/uploads/*
+!writable/uploads/index.html
+
+writable/debugbar/*
+!writable/debugbar/.gitkeep
+
+._*
+
+.DS_Store
+
+# Visual Studio Code
+.vscode/
