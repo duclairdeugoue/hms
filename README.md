@@ -1,20 +1,14 @@
 # Hotel Management System made with Codeigniter 4
 
-## What is CodeIgniter?
+## What is codeigniter 4?
 
 CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
 More information can be found at the [official site](http://codeigniter.com).
 
-This repository holds the distributable version of the framework,
-including the user guide. It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
-
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
-
 The user guide corresponding to this version of the framework can be found
 [here](https://codeigniter4.github.io/userguide/).
 
-## Server Requirements
+## Server Requirement
 
 PHP version 7.4 or higher is required, with the following extensions installed:
 
@@ -27,3 +21,31 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - [mbstring](http://php.net/manual/en/mbstring.installation.php)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
 - xml (enabled by default - don't turn it off)
+
+## Installatioin
+
+1 - Clone this project locally using the commmand
+
+```git
+git clone https://github.com/duclairdeugoue/ci4-hmsapp.git 
+```
+
+2 - Type the commands below to upgrade and install the project packages:
+
+```php
+composer update
+
+composer install 
+```
+
+3 - Use the link  bellow to download and add the css, js, fonts folders in public folder of the codeigniter project to serve as the template styles
+
+4 - Change branch to 'develop' branch using the command:
+
+```bash
+git checkout develop
+```
+
+and then start making your changes, Please make sure to send pull request to the main branch ***Do not merge any changes with the 'main' branch*** unless your are authorized to do so.
+
+## Documentation
