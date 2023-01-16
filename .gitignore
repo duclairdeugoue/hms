@@ -26,3 +26,11 @@ writable/debugbar/*
 
 # Visual Studio Code
 .vscode/
+
+# Assests
+
+public/css
+public/fonts
+public/images
+public/js
+public/scss
