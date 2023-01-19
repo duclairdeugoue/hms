@@ -30,7 +30,9 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 git clone https://github.com/duclairdeugoue/ci4-hmsapp.git 
 ```
 
-2 - Type the commands below to upgrade and install the project packages:
+2 - Enter inside the project folder and create an empty folder named `cache` inside the folder writable
+
+3 - Type the commands below to upgrade and install the project packages:
 
 ```php
 composer update
@@ -38,9 +40,9 @@ composer update
 composer install 
 ```
 
-3 - Use the link  bellow to download and add the css, js, fonts folders in public folder of the codeigniter project to serve as the template styles
+4 - Use the link  bellow to download and add the css, js, fonts folders in public folder of the codeigniter project to serve as the template styles
 
-4 - Change branch to 'develop' branch using the command:
+5 - Change branch to 'develop' branch using the command:
 
 ```bash
 git checkout develop
