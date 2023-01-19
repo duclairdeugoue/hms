@@ -30,8 +30,8 @@ writable/debugbar/*
 
 # Assests
 
-public/css
-public/fonts
-public/images
-public/js
-public/scss
+# public/css
+# public/fonts
+# public/images
+# public/js
+# public/scss
