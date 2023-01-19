@@ -7,6 +7,7 @@
 # Temporary Files
 #-------------------------
 /writable/cache/*
+!writable/cache/test.php
 
 writable/logs/*
 !writable/logs/index.html
