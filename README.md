@@ -40,9 +40,7 @@ composer update
 composer install 
 ```
 
-4 - Use the link  bellow to download and add the css, js, fonts folders in public folder of the codeigniter project to serve as the template styles
-
-5 - Change branch to 'develop' branch using the command:
+6 - Change branch to 'develop' branch using the command:
 
 ```bash
 git checkout develop
