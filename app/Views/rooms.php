@@ -1,6 +1,6 @@
 <?= $this->extend('layouts/main') ?>
 
-<?= $this->section('content')?>
+<?= $this->section('content') ?>
 
 <section class="site-hero inner-page overlay" style="background-image: url(images/hero_4.jpg)" data-stellar-background-ratio="0.5">
   <div class="container">
@@ -91,7 +91,7 @@
   <div class="container">
 
     view_cell();
-    
+
     <!-- <div class="row">
       <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
         <a href="#" class="room">
@@ -105,7 +105,7 @@
         </a>
       </div> -->
 
-      <!-- <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
+    <!-- <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
         <a href="#" class="room">
           <figure class="img-wrap">
             <img src="images/img_2.jpg" alt="Free website template" class="img-fluid mb-3">
@@ -117,7 +117,7 @@
         </a>
       </div> -->
 
-      <!-- <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
+    <!-- <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
         <a href="#" class="room">
           <figure class="img-wrap">
             <img src="images/img_3.jpg" alt="Free website template" class="img-fluid mb-3">
@@ -129,7 +129,7 @@
         </a>
       </div> -->
 
-      <!-- <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
+    <!-- <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
         <a href="#" class="room">
           <figure class="img-wrap">
             <img src="images/img_1.jpg" alt="Free website template" class="img-fluid mb-3">
@@ -141,7 +141,7 @@
         </a>
       </div> -->
 
-      <!-- <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
+    <!-- <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
         <a href="#" class="room">
           <figure class="img-wrap">
             <img src="images/img_2.jpg" alt="Free website template" class="img-fluid mb-3">
@@ -165,7 +165,7 @@
         </a>
       </div> -->
 
-    </div>
+  </div>
   </div>
 </section>
 
