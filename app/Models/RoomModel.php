@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class RoomModel extends Model
 {
-    protected $DBGroup          = 'default';
+    protected $DBGroup   = 'default';
     protected $table            = 'rooms';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
