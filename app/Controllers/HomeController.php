@@ -5,20 +5,18 @@ namespace App\Controllers;
 class HomeController extends BaseController
 {
     public $headerData = [
-        'heading'   => 'Rooms'
+        'heading'   => 'Home'
     ];
     public $breadcrumbsData = [
-        'heading'   => 'Rooms'
+        'heading'   => 'Home'
     ];
     public $roomsData = 6;
-    public $eventsData = null;
+    public $eventsData = 3;
     public $footerData = null;
 
 
     public function index()
     {
-        
-
         $data = [
             'headerData'                =>  $this->headerData,
             'breadcrumbsData'           =>  $this->breadcrumbsData,
