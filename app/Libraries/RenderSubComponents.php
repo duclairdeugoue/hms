@@ -1,9 +1,9 @@
 <?php namespace App\Libraries;
 
-class Room {
+class RenderSubComponents {
 
   public function viewRoom()
   {
-    return view("components/room");
+    return view("sub_components/room");
   }
 }
