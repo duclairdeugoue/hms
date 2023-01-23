@@ -2,38 +2,16 @@
 
 <?= $this->section('content') ?>
 
-<section class="site-hero inner-page overlay" style="background-image: url(images/hero_4.jpg)" data-stellar-background-ratio="0.5">
-  <div class="container">
-    <div class="row site-hero-inner justify-content-center align-items-center">
-      <div class="col-md-10 text-center" data-aos="fade">
-        <h1 class="heading mb-3">Rooms</h1>
-        <ul class="custom-breadcrumbs mb-4">
-          <li><a href="/">Home</a></li>
-          <li>&bullet;</li>
-          <li>Rooms</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <a class="mouse smoothscroll" href="#next">
-    <div class="mouse-icon">
-      <span class="mouse-wheel"></span>
-    </div>
-  </a>
-</section>
-<!-- END section -->
+<!-- Breadcrumbs components -->
+<?= view_cell("\App\Libraries\RenderComponents::viewBreadcrumbs") ?>
 
 <!-- Search Bar components -->
-<?= view_cell("\App\Libraries\SearchBar::viewSearchBar") ?>
+<?= view_cell("\App\Libraries\RenderComponents::viewSearchbar") ?>
 
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <?= view_cell("\App\Libraries\Room::viewRoom") ?>
-    </div>
-  </div>
-</section>
+<!-- Rooms components -->
+<?= view_cell("\App\Libraries\RenderComponents::viewRooms") ?>
+
+
 
 <section class="section bg-light">
 
