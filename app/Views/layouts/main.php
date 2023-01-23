@@ -76,7 +76,7 @@
                     <h2 class="text-white font-weight-bold">A Best Place To Stay. Reserve Now!</h2>
                 </div>
                 <div class="col-12 col-md-6 text-center text-md-right" data-aos="fade-up" data-aos-delay="200">
-                    <a href="reservation.html" class="btn btn-outline-white-primary py-3 text-white px-5">Reserve Now</a>
+                    <a href="/reservation" class="btn btn-outline-white-primary py-3 text-white px-5">Reserve Now</a>
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy;<script>
                         document.write(new Date().getFullYear());
-                    </script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    </script>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
 

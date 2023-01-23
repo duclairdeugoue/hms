@@ -16,4 +16,9 @@ class RenderComponents {
   {
     return view("components/breadcrumbs");
   }
+
+  public function viewOffers()
+  {
+    return view("components/offers");
+  }
 }
