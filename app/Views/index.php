@@ -1,6 +1,9 @@
 <?= $this->extend('layouts/main') ?>
 <?= $this->section('content') ?>
 
+<!-- Header Component -->
+<?= view_cell("\App\Libraries\RenderComponents::viewHeader", $headerData) ?>
+
 <section class="site-hero overlay" style="background-image: url(images/hero_4.jpg)" data-stellar-background-ratio="0.5">
   <div class="container">
     <div class="row site-hero-inner justify-content-center align-items-center">
@@ -19,67 +22,9 @@
 </section>
 <!-- END section -->
 
-<section class="section bg-light pb-0">
-  <div class="container">
+<!-- Search Bar components -->
+<?= view_cell("\App\Libraries\RenderComponents::viewSearchbar") ?>
 
-    <div class="row check-availabilty" id="next">
-      <div class="block-32" data-aos="fade-up" data-aos-offset="-200">
-
-        <form action="#">
-          <div class="row">
-            <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
-              <label for="checkin_date" class="font-weight-bold text-black">Check In</label>
-              <div class="field-icon-wrap">
-                <div class="icon"><span class="icon-calendar"></span></div>
-                <input type="text" id="checkin_date" class="form-control">
-              </div>
-            </div>
-            <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
-              <label for="checkout_date" class="font-weight-bold text-black">Check Out</label>
-              <div class="field-icon-wrap">
-                <div class="icon"><span class="icon-calendar"></span></div>
-                <input type="text" id="checkout_date" class="form-control">
-              </div>
-            </div>
-            <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
-              <div class="row">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label for="adults" class="font-weight-bold text-black">Adults</label>
-                  <div class="field-icon-wrap">
-                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                    <select name="" id="adults" class="form-control">
-                      <option value="">1</option>
-                      <option value="">2</option>
-                      <option value="">3</option>
-                      <option value="">4+</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label for="children" class="font-weight-bold text-black">Children</label>
-                  <div class="field-icon-wrap">
-                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                    <select name="" id="children" class="form-control">
-                      <option value="">1</option>
-                      <option value="">2</option>
-                      <option value="">3</option>
-                      <option value="">4+</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 align-self-end">
-              <button class="btn btn-primary btn-block text-white">Check Availabilty</button>
-            </div>
-          </div>
-        </form>
-      </div>
-
-
-    </div>
-  </div>
-</section>
 
 <section class="py-5 bg-light">
   <div class="container">
@@ -109,42 +54,8 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 col-lg-4" data-aos="fade-up">
-        <a href="#" class="room">
-          <figure class="img-wrap">
-            <img src="images/img_1.jpg" alt="Free website template" class="img-fluid mb-3">
-          </figure>
-          <div class="p-3 text-center room-info">
-            <h2>Single Room</h2>
-            <span class="text-uppercase letter-spacing-1">90$ / per night</span>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-4" data-aos="fade-up">
-        <a href="#" class="room">
-          <figure class="img-wrap">
-            <img src="images/img_2.jpg" alt="Free website template" class="img-fluid mb-3">
-          </figure>
-          <div class="p-3 text-center room-info">
-            <h2>Family Room</h2>
-            <span class="text-uppercase letter-spacing-1">120$ / per night</span>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-4" data-aos="fade-up">
-        <a href="#" class="room">
-          <figure class="img-wrap">
-            <img src="images/img_3.jpg" alt="Free website template" class="img-fluid mb-3">
-          </figure>
-          <div class="p-3 text-center room-info">
-            <h2>Presidential Room</h2>
-            <span class="text-uppercase letter-spacing-1">250$ / per night</span>
-          </div>
-        </a>
-      </div>
-
+      <!-- Rooms components -->
+      <?= view_cell("\App\Libraries\RenderComponents::viewRooms", $roomsData) ?>
 
     </div>
   </div>
@@ -276,7 +187,6 @@
   </div>
 </section>
 
-
 <section class="section blog-post-entry bg-light">
   <div class="container">
     <div class="row justify-content-center text-center mb-5">
@@ -286,40 +196,13 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="media media-custom d-block mb-4 h-100">
-          <a href="#" class="mb-4 d-block"><img src="images/img_1.jpg" alt="Image placeholder" class="img-fluid"></a>
-          <div class="media-body">
-            <span class="meta-post">February 26, 2018</span>
-            <h2 class="mt-0 mb-3"><a href="#">Travel Hacks to Make Your Flight More Comfortable</a></h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="200">
-        <div class="media media-custom d-block mb-4 h-100">
-          <a href="#" class="mb-4 d-block"><img src="images/img_2.jpg" alt="Image placeholder" class="img-fluid"></a>
-          <div class="media-body">
-            <span class="meta-post">February 26, 2018</span>
-            <h2 class="mt-0 mb-3"><a href="#">5 Job Types That Aallow You To Earn As You Travel The World</a></h2>
-            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="300">
-        <div class="media media-custom d-block mb-4 h-100">
-          <a href="#" class="mb-4 d-block"><img src="images/img_3.jpg" alt="Image placeholder" class="img-fluid"></a>
-          <div class="media-body">
-            <span class="meta-post">February 26, 2018</span>
-            <h2 class="mt-0 mb-3"><a href="#">30 Great Ideas On Gifts For Travelers</a></h2>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. t is a paradisematic country, in which roasted parts of sentences.</p>
-          </div>
-        </div>
-      </div>
+      <!-- Events component -->
+      <?= view_cell("\App\Libraries\RenderComponents::viewEvents", $eventsData) ?>
     </div>
   </div>
 </section>
+
+<!-- Footer component -->
+<?= view_cell("\App\Libraries\RenderComponents::viewFooter", $footerData) ?>
 
 <?= $this->endSection() ?>

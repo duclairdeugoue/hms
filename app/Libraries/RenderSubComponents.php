@@ -2,8 +2,13 @@
 
 class RenderSubComponents {
 
-  public function viewRoom()
+  public function viewRoom($roomData)
   {
-    return view("sub_components/room");
+    return view("sub_components/room_card");
+  }
+
+  public function viewEvent($eventData)
+  {
+    return view("sub_components/event_card", $eventData);
   }
 }

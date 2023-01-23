@@ -2,11 +2,11 @@
   <div class="container">
     <div class="row site-hero-inner justify-content-center align-items-center">
       <div class="col-md-10 text-center" data-aos="fade">
-        <h1 class="heading mb-3">Rooms</h1>
+        <h1 class="heading mb-3"><?= $heading ?></h1>
         <ul class="custom-breadcrumbs mb-4">
           <li><a href="/">Home</a></li>
           <li>&bullet;</li>
-          <li>Rooms</li>
+          <li><?= $heading ?></li>
         </ul>
       </div>
     </div>
