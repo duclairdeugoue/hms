@@ -8,7 +8,10 @@ class ReservationController extends BaseController
 {
     public function index()
     {
-        return view('reservation');
+        $data = [
+            'breadcrumdsData'  => ['heading'   => 'Reservation'],
+        ];
+        return view('reservation', $data);
 
     }
 }

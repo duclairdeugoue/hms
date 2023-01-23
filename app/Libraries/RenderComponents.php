@@ -1,24 +1,27 @@
-<?php namespace App\Libraries;
+<?php
 
-class RenderComponents {
+namespace App\Libraries;
 
-  public function viewRooms()
+class RenderComponents
+{
+
+  public function viewRooms($data)
   {
-    return view("components/rooms");
+    return view("components/rooms", $data);
   }
 
-  public function viewSearchbar()
+  public function viewSearchbar($data)
   {
-    return view("components/search_bar");
+    return view("components/search_bar", $data);
   }
 
-  public function viewBreadcrumbs()
+  public function viewBreadcrumbs($data)
   {
-    return view("components/breadcrumbs");
+    return view("components/breadcrumbs", $data);
   }
 
-  public function viewOffers()
+  public function viewOffers($data)
   {
-    return view("components/offers");
+    return view("components/offers", $data);
   }
 }

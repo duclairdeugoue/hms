@@ -41,11 +41,11 @@ $routes->get('/about', 'AboutController::index');
 
 $routes->get('/contact', 'ContactController::index');
 
-$routes->get('/events', 'EventController::index');
+$routes->get('/events', 'EventsController::index');
 
 $routes->get('/reservation', 'ReservationController::index');
 
-$routes->get('/rooms', 'RoomController::index');
+$routes->get('/rooms', 'RoomsController::index');
 
 /*
  * --------------------------------------------------------------------
