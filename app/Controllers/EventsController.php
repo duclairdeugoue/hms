@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 
-class EventController extends BaseController
+class EventsController extends BaseController
 {
     public function index()
     {
