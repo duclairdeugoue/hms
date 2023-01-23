@@ -27,6 +27,6 @@ class AboutController extends BaseController
             'footerData'                =>  $this->footerData
         ];
 
-        return view('about');
+        return view('about', $data);
     }
 }

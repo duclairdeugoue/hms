@@ -27,6 +27,6 @@ class EventsController extends BaseController
             'footerData'                =>  $this->footerData
         ];
 
-        return view('events');
+        return view('events', $data);
     }
 }

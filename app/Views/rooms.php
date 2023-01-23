@@ -2,16 +2,22 @@
 
 <?= $this->section('content') ?>
 
-<!-- Breadcrumbs components -->
+<!-- Header component -->
+<?= view_cell("\App\Libraries\RenderComponents::viewHeader", $headerData) ?>
+
+<!-- Breadcrumbs component -->
 <?= view_cell("\App\Libraries\RenderComponents::viewBreadcrumbs", $breadcrumbsData) ?>
 
-<!-- Search Bar components -->
+<!-- Search Bar component -->
 <?= view_cell("\App\Libraries\RenderComponents::viewSearchbar") ?>
 
-<!-- Rooms components -->
-<?= view_cell("\App\Libraries\RenderComponents::viewRooms") ?>
+<!-- Rooms component -->
+<?= view_cell("\App\Libraries\RenderComponents::viewRooms",$roomsData) ?>
 
-<!-- Rooms components -->
+<!-- Offers component -->
 <?= view_cell("\App\Libraries\RenderComponents::viewOffers") ?>
+
+<!-- Footer component -->
+<?= view_cell("\App\Libraries\RenderComponents::viewFooter", $footerData) ?>
 
 <?= $this->endSection() ?>

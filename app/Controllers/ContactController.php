@@ -12,7 +12,6 @@ class ContactController extends BaseController
     public $breadcrumbsData = [
         'heading'   => 'Contact Us'
     ];
-    public $roomsData = 6;
     public $eventsData = 3;
     public $footerData = null;
 
@@ -22,11 +21,10 @@ class ContactController extends BaseController
         $data = [
             'headerData'                =>  $this->headerData,
             'breadcrumbsData'           =>  $this->breadcrumbsData,
-            'roomsData'                 =>  $this->roomsData,
             'eventsData'                =>  $this->eventsData,
             'footerData'                =>  $this->footerData
         ];
 
-        return view('contact');
+        return view('contact',$data);
     }
 }
