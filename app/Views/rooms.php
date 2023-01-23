@@ -90,7 +90,7 @@
 <section class="section">
   <div class="container">
 
-  <?= view_cell("\App\Library\Component") ?>
+  <?= view_cell("\App\Library\components\Room::showRoom") ?>
     <!-- <div class="row">
       <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
         <a href="#" class="room">
