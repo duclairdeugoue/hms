@@ -5,7 +5,13 @@ namespace App\Controllers;
 class HomeController extends BaseController
 {
     public $headerData = [
-        'heading'   => 'Home'
+        'heading'   => 'Home',
+        'navItemRooms' => false,
+        'navItemAbout' => false,
+        'navItemEvents' => false,
+        'navItemHome' => true,
+        'navItemContact' => false,
+        'navItemReservation' => false,
     ];
     public $breadcrumbsData = [
         'heading'   => 'Home'

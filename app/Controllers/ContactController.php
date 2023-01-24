@@ -7,7 +7,13 @@ use App\Controllers\BaseController;
 class ContactController extends BaseController
 {
     public $headerData = [
-        'heading'   => 'Contact Us'
+        'heading'   => 'Contact Us',
+        'navItemRooms' => false,
+        'navItemAbout' => false,
+        'navItemEvents' => false,
+        'navItemHome' => false,
+        'navItemContact' => true,
+        'navItemReservation' => false,
     ];
     public $breadcrumbsData = [
         'heading'   => 'Contact Us'

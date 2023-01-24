@@ -7,10 +7,16 @@ use App\Controllers\BaseController;
 class RoomsController extends BaseController
 {
     public $headerData = [
-        'heading'   => 'Rooms'
+        'heading'   => 'Rooms',
+        'navItemRooms' => true,
+        'navItemAbout' => false,
+        'navItemEvents' => false,
+        'navItemHome' => false,
+        'navItemContact' => false,
+        'navItemReservation' => false,
     ];
     public $breadcrumbsData = [
-        'heading'   => 'Rooms'
+        'heading'   => 'Rooms',
     ];
     public $roomsData = 6;
     public $eventsData = 3;

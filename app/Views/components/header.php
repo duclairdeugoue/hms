@@ -18,12 +18,12 @@
               <div class="row full-height align-items-center">
                 <div class="col-md-6 mx-auto">
                   <ul class="list-unstyled menu">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/rooms">Rooms</a></li>
-                    <li class="active"><a href="/about">About</a></li>
-                    <li><a href="/events">Events</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/reservation">Reservation</a></li>
+                    <li class="<?= $navItemHome ? "active" : "" ?>"><a href="/">Home</a></li>
+                    <li class="<?= $navItemRooms ? "active" : "" ?>"><a href="/rooms">Rooms</a></li>
+                    <li class="<?= $navItemAbout ? "active" : "" ?>"><a href="/about">About</a></li>
+                    <li class="<?= $navItemEvents ? "active" : "" ?>"><a href="/events">Events</a></li>
+                    <li class="<?= $navItemContact ? "active" : "" ?>"><a href="/contact">Contact</a></li>
+                    <li class="<?= $navItemReservation ? "active" : "" ?>"><a href="/reservation">Reservation</a></li>
                   </ul>
                 </div>
               </div>

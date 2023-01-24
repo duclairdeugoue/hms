@@ -7,7 +7,13 @@ use App\Controllers\BaseController;
 class AboutController extends BaseController
 {
     public $headerData = [
-        'heading'   => 'About'
+        'heading'   => 'About',
+        'navItemRooms' => false,
+        'navItemAbout' => true,
+        'navItemEvents' => false,
+        'navItemHome' => false,
+        'navItemContact' => false,
+        'navItemReservation' => false,
     ];
     public $breadcrumbsData = [
         'heading'   => 'About'
