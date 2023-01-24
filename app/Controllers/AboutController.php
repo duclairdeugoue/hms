@@ -6,8 +6,33 @@ use App\Controllers\BaseController;
 
 class AboutController extends BaseController
 {
+    public $headerData = [
+        'heading'   => 'About',
+        'navItemRooms' => false,
+        'navItemAbout' => true,
+        'navItemEvents' => false,
+        'navItemHome' => false,
+        'navItemContact' => false,
+        'navItemReservation' => false,
+    ];
+    public $breadcrumbsData = [
+        'heading'   => 'About'
+    ];
+    public $roomsData = 6;
+    public $eventsData = 3;
+    public $footerData = null;
+
+
     public function index()
     {
-        return view('about');
+        $data = [
+            'headerData'                =>  $this->headerData,
+            'breadcrumbsData'           =>  $this->breadcrumbsData,
+            'roomsData'                 =>  $this->roomsData,
+            'eventsData'                =>  $this->eventsData,
+            'footerData'                =>  $this->footerData
+        ];
+
+        return view('about', $data);
     }
 }

@@ -40,12 +40,24 @@ composer update
 composer install 
 ```
 
-4 - Use the link  bellow to download and add the css, js, fonts folders in public folder of the codeigniter project to serve as the template styles
-
-5 - Change branch to 'develop' branch using the command:
+6 - Create your own branch to 'branch-name' using the command:
 
 ```bash
-git checkout develop
+git checkout -b [branch-name]
+```
+
+7 - Open your phpMyAdmin in XAMPP, WAMPP or MAMP and and create a db named `hms_db` , make sure your user is `root` and his password is  `root` but you can change this configuration in the .env file of the project.
+
+8 - Go back to source IDE and type the command below to apply migrate the migrations
+
+```php
+php spark migrate
+```
+
+9 - Finally launch the application using the command
+
+```php
+php spark serve
 ```
 
 and then start making your changes, Please make sure to send pull request to the main branch ***Do not merge any changes with the 'main' branch*** unless your are authorized to do so.

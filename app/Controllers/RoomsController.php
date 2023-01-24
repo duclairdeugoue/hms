@@ -4,19 +4,19 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 
-class ReservationController extends BaseController
+class RoomsController extends BaseController
 {
     public $headerData = [
-        'heading'   => 'Reservation',
-        'navItemRooms' => false,
+        'heading'   => 'Rooms',
+        'navItemRooms' => true,
         'navItemAbout' => false,
         'navItemEvents' => false,
         'navItemHome' => false,
         'navItemContact' => false,
-        'navItemReservation' => true,
+        'navItemReservation' => false,
     ];
     public $breadcrumbsData = [
-        'heading'   => 'Reservation'
+        'heading'   => 'Rooms',
     ];
     public $roomsData = 6;
     public $eventsData = 3;
@@ -33,6 +33,6 @@ class ReservationController extends BaseController
             'footerData'                =>  $this->footerData
         ];
 
-        return view('reservation', $data);
+        return view('rooms', $data);
     }
 }
