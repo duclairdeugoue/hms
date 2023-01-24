@@ -7,10 +7,10 @@ use App\Controllers\BaseController;
 class RoomsController extends BaseController
 {
     public $headerData = [
-        'heading'   => 'Contact Us'
+        'heading'   => 'Rooms'
     ];
     public $breadcrumbsData = [
-        'heading'   => 'Contact Us'
+        'heading'   => 'Rooms'
     ];
     public $roomsData = 6;
     public $eventsData = 3;
