@@ -34,6 +34,5 @@ class ReservationController extends BaseController
         ];
 
         return view('reservation', $data);
-
     }
 }
