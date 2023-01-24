@@ -14,14 +14,14 @@ class EventModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['event_date','event_name','event_slug'];
+    protected $allowedFields    = ['event_date', 'event_title', 'event_slug'];
 
     // Dates
     protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
-    protected $deletedField  = 'deleted_at';
+    protected $createdField  = 'event_created_at';
+    protected $updatedField  = 'event_updated_at';
+    protected $deletedField  = 'event_deleted_at';
 
     // Validation
     protected $validationRules      = [];
