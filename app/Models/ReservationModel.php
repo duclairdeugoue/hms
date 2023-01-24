@@ -14,7 +14,7 @@ class ReservationModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['cust_name','cust_email','cust_phone_number','check_in','check_out','no_of_adult','no_of_childrens'];
 
     // Dates
     protected $useTimestamps = false;
