@@ -1,8 +1,11 @@
 <?= $this->extend('layouts/main') ?>
 <?= $this->section('content') ?>
 
-  <!-- Breadcrumbs components -->
-  <?= view_cell("\App\Libraries\RenderComponents::viewBreadcrumbs", $breadcrumbsData) ?>
+<!-- Header component -->
+<?= view_cell("\App\Libraries\RenderComponents::viewHeader", $headerData) ?>
+
+<!-- Breadcrumbs components -->
+<?= view_cell("\App\Libraries\RenderComponents::viewBreadcrumbs", $breadcrumbsData) ?>
 
 
 <section class="section contact-section" id="next">

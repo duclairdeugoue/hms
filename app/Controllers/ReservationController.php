@@ -7,7 +7,13 @@ use App\Controllers\BaseController;
 class ReservationController extends BaseController
 {
     public $headerData = [
-        'heading'   => 'Reservation'
+        'heading'   => 'Reservation',
+        'navItemRooms' => false,
+        'navItemAbout' => false,
+        'navItemEvents' => false,
+        'navItemHome' => false,
+        'navItemContact' => false,
+        'navItemReservation' => true,
     ];
     public $breadcrumbsData = [
         'heading'   => 'Reservation'
@@ -27,5 +33,6 @@ class ReservationController extends BaseController
             'footerData'                =>  $this->footerData
         ];
 
+        return view('reservation', $data);
     }
 }

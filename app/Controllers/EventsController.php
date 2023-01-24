@@ -7,7 +7,13 @@ use App\Controllers\BaseController;
 class EventsController extends BaseController
 {
     public $headerData = [
-        'heading'   => 'Events'
+        'heading'   => 'Events',
+        'navItemRooms' => false,
+        'navItemAbout' => false,
+        'navItemEvents' => true,
+        'navItemHome' => false,
+        'navItemContact' => false,
+        'navItemReservation' => false,
     ];
     public $breadcrumbsData = [
         'heading'   => 'Events'
