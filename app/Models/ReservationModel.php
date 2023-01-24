@@ -17,7 +17,7 @@ class ReservationModel extends Model
     protected $allowedFields    = ['cust_name','cust_email','cust_phone_number','check_in','check_out','no_of_adult','no_of_childrens'];
 
     // Dates
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
