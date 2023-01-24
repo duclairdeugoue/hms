@@ -46,7 +46,7 @@ composer install
 git checkout -b [branch-name]
 ```
 
-7 - Open your phpMyAdmin in XAMPP, WAMPP or MAMP and and create a db named `hms_db` , make sure your user is `root` and his password is  `root` but you can change this configuration in the .env file of the project.
+7 - Open your phpMyAdmin in XAMPP, WAMPP or MAMP and and create a db named `hms_db` , make sure your user is `hms_admin` and his password is  `hms_admin` by creating this user and granting all permission.
 
 8 - Go back to source IDE and type the command below to apply migrate the migrations
 
