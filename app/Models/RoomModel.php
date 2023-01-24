@@ -8,20 +8,25 @@ class RoomModel extends Model
 {
     protected $DBGroup   = 'default';
     protected $table            = 'rooms';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'room_id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = [
+        'room_price',
+        'room_category',
+        'room_max_adults',
+        'room_max_children'
+    ];
 
     // Dates
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
-    protected $deletedField  = 'deleted_at';
+    protected $createdField  = 'room_created_at';
+    protected $updatedField  = 'room_updated_at';
+    protected $deletedField  = 'room_deleted_at';
 
     // Validation
     protected $validationRules      = [];
