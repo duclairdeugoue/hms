@@ -14,7 +14,11 @@ class EventModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['event_date', 'event_title', 'event_slug'];
+    protected $allowedFields    = [
+        'event_date',
+        'event_title',
+        'event_slug'
+    ];
 
     // Dates
     protected $useTimestamps = true;
