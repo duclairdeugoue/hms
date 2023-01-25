@@ -19,7 +19,7 @@ class ContactController extends BaseController
         'heading'   => 'Contact Us'
     ];
     public $eventsData = 3;
-    public $footerData = null;
+    public $footerData = [];
 
 
     public function index()
