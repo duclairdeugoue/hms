@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Controllers;
+
+use App\Models\EventModel;
 use App\Models\RoomModel;
 
 class HomeController extends BaseController
@@ -18,14 +20,17 @@ class HomeController extends BaseController
         'heading'   => 'Home'
     ];
     public $roomsData = null;
-    public $eventsData = 3;
+    public $eventsData = null;
     public $footerData = null;
 
 
     public function index()
     {
         $roomModel = new RoomModel();
+        $eventModel = new EventModel();
+
         $this->roomsData = $roomModel->getAllRooms();
+        $this->eventsData = $eventModel->getAllEvents();
         
         $data = [
             'headerData'                =>  $this->headerData,
