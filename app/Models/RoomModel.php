@@ -44,4 +44,9 @@ class RoomModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+
+    public function getAllRooms() {
+        return $this->findAll();
+    }
 }
