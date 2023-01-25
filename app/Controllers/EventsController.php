@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\EventModel;
 
 class EventsController extends BaseController
 {
@@ -25,11 +26,12 @@ class EventsController extends BaseController
 
     public function index()
     {
+        $evemtModel = new EventModel();
         $data = [
             'headerData'                =>  $this->headerData,
             'breadcrumbsData'           =>  $this->breadcrumbsData,
             'roomsData'                 =>  $this->roomsData,
-            'eventsData'                =>  $this->eventsData,
+            'eventsData'                =>  $evemtModel->getAllEvents(),
             'footerData'                =>  $this->footerData
         ];
 

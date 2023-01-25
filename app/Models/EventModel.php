@@ -26,7 +26,7 @@ class EventModel extends Model
     protected $createdField  = 'event_created_at';
     protected $updatedField  = 'event_updated_at';
     protected $deletedField  = 'event_deleted_at';
-
+    
     // Validation
     protected $validationRules      = [];
     protected $validationMessages   = [];
@@ -43,4 +43,9 @@ class EventModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+
+    public function getAllEvents() {
+        return $this->findAll();
+    }
 }
