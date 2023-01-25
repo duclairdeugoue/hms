@@ -20,8 +20,8 @@ class RoomsController extends BaseController
         'heading'   => 'Rooms',
     ];
     
-    public $roomsData = null;
-    public $footerData = null;
+    public $roomsData = [];
+    public $footerData = [];
 
 
 

@@ -19,8 +19,8 @@ class EventsController extends BaseController
     public $breadcrumbsData = [
         'heading'   => 'Events'
     ];
-    public $eventsData = null;
-    public $footerData = null;
+    public $eventsData = [];
+    public $footerData = [];
 
 
     public function index()
