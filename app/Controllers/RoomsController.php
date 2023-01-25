@@ -20,7 +20,7 @@ class RoomsController extends BaseController
         'heading'   => 'Rooms',
     ];
     
-    public $roomsData = 6;
+    public $roomsData = null;
     public $footerData = null;
 
 
@@ -28,12 +28,13 @@ class RoomsController extends BaseController
     public function index()
     {
         $roomModel = new RoomModel();
+        $this->roomsData = $roomModel->getAllRooms();
 
         $data = [
             'headerData'                =>  $this->headerData,
             'breadcrumbsData'           =>  $this->breadcrumbsData,
-            'roomsData'                 =>  $roomModel->getAllRooms(),
-            'footerData'                =>  $this->footerData
+            'roomsData'                 =>  $this->roomsData,
+            'footerData'                =>  $this->footerData,
         ];
 
         return view('rooms', $data);
