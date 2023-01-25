@@ -19,9 +19,9 @@ class HomeController extends BaseController
     public $breadcrumbsData = [
         'heading'   => 'Home'
     ];
-    public $roomsData = null;
-    public $eventsData = null;
-    public $footerData = null;
+    public $roomsData = [];
+    public $eventsData = [];
+    public $footerData = [];
 
 
     public function index()
@@ -29,8 +29,8 @@ class HomeController extends BaseController
         $roomModel = new RoomModel();
         $eventModel = new EventModel();
 
-        $this->roomsData = $roomModel->getAllRooms();
-        $this->eventsData = $eventModel->getAllEvents();
+        // $this->roomsData = $roomModel->getAllRooms();
+        // $this->eventsData = $eventModel->getAllEvents();
         
         $data = [
             'headerData'                =>  $this->headerData,
