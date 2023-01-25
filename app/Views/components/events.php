@@ -1,8 +1,8 @@
 <section class="section">
   <div class="container">
     <div class="row">
-      <?php foreach ($eventsData as $data) : ?>
-        <?= view_cell("\App\Libraries\RenderSubComponents::viewEvent", $data) ?>
+      <?php foreach ($eventsData as $eventData) : ?>
+        <?= view_cell("\App\Libraries\RenderSubComponents::viewEvent", $eventData) ?>
       <?php endforeach ?>
     </div>
   </div>
