@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\RoomModel;
 
 class RoomsController extends BaseController
 {
@@ -18,19 +19,22 @@ class RoomsController extends BaseController
     public $breadcrumbsData = [
         'heading'   => 'Rooms',
     ];
-    public $roomsData = 6;
-    public $eventsData = 3;
+    
+    public $roomsData = null;
     public $footerData = null;
+
 
 
     public function index()
     {
+        $roomModel = new RoomModel();
+        $this->roomsData = $roomModel->getAllRooms();
+
         $data = [
             'headerData'                =>  $this->headerData,
             'breadcrumbsData'           =>  $this->breadcrumbsData,
             'roomsData'                 =>  $this->roomsData,
-            'eventsData'                =>  $this->eventsData,
-            'footerData'                =>  $this->footerData
+            'footerData'                =>  $this->footerData,
         ];
 
         return view('rooms', $data);

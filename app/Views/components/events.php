@@ -1,9 +1,9 @@
 <section class="section">
   <div class="container">
     <div class="row">
-      <?php for ($i = 1; $i <= $eventsData; $i++) : ?>
-        <?= view_cell("\App\Libraries\RenderSubComponents::viewEvent") ?>
-      <?php endfor ?>
+      <?php foreach ($eventsData as $eventData) : ?>
+        <?= view_cell("\App\Libraries\RenderSubComponents::viewEvent", $eventData) ?>
+      <?php endforeach ?>
     </div>
   </div>
 </section>
