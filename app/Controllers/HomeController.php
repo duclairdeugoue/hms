@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\RoomModel;
 
 class HomeController extends BaseController
 {
@@ -16,13 +17,16 @@ class HomeController extends BaseController
     public $breadcrumbsData = [
         'heading'   => 'Home'
     ];
-    public $roomsData = 6;
+    public $roomsData = null;
     public $eventsData = 3;
     public $footerData = null;
 
 
     public function index()
     {
+        $roomModel = new RoomModel();
+        $this->roomsData = $roomModel->getAllRooms();
+        
         $data = [
             'headerData'                =>  $this->headerData,
             'breadcrumbsData'           =>  $this->breadcrumbsData,
