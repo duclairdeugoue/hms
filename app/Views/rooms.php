@@ -12,7 +12,7 @@
 <?= view_cell("\App\Libraries\RenderComponents::viewSearchbar") ?>
 
 <!-- Rooms component -->
-<?= view_cell("\App\Libraries\RenderComponents::viewRooms",$roomsData) ?>
+<?= view_cell("\App\Libraries\RenderComponents::viewRooms",  $roomsData)?>
 
 <!-- Offers component -->
 <?= view_cell("\App\Libraries\RenderComponents::viewOffers") ?>
