@@ -28,7 +28,11 @@ class RoomsController extends BaseController
     public function index()
     {
         $roomModel = new RoomModel();
-        $this->roomsData = $roomModel->getAllRooms();
+        try {
+            $this->roomsData = $roomModel->getAllRooms();
+        } catch (\Throwable $th) {
+            //throw $th;
+        }
 
         $data = [
             'headerData'                =>  $this->headerData,

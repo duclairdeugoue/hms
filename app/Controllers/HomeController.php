@@ -28,9 +28,13 @@ class HomeController extends BaseController
     {
         $roomModel = new RoomModel();
         $eventModel = new EventModel();
-
-        // $this->roomsData = $roomModel->getAllRooms();
-        // $this->eventsData = $eventModel->getAllEvents();
+        try {
+            $this->roomsData = $roomModel->getAllRooms();
+            $this->eventsData = $eventModel->getAllEvents();
+        } catch (\Throwable $th) {
+            // echo $th;
+        }
+       
         
         $data = [
             'headerData'                =>  $this->headerData,
