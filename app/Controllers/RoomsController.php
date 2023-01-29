@@ -20,15 +20,19 @@ class RoomsController extends BaseController
         'heading'   => 'Rooms',
     ];
     
-    public $roomsData = null;
-    public $footerData = null;
+    public $roomsData = [];
+    public $footerData = [];
 
 
 
     public function index()
     {
         $roomModel = new RoomModel();
-        $this->roomsData = $roomModel->getAllRooms();
+        try {
+            $this->roomsData = $roomModel->getAllRooms();
+        } catch (\Throwable $th) {
+            //throw $th;
+        }
 
         $data = [
             'headerData'                =>  $this->headerData,

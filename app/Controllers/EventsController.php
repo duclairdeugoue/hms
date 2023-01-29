@@ -19,14 +19,18 @@ class EventsController extends BaseController
     public $breadcrumbsData = [
         'heading'   => 'Events'
     ];
-    public $eventsData = null;
-    public $footerData = null;
+    public $eventsData = [];
+    public $footerData = [];
 
 
     public function index()
     {
         $eventModel = new EventModel();
-        $this->eventsData = $eventModel->getAllEvents();
+        try {
+            $this->eventsData = $eventModel->getAllEvents();
+        } catch (\Throwable $th) {
+            // echo $th;
+        }
 
         $data = [
             'headerData'                =>  $this->headerData,

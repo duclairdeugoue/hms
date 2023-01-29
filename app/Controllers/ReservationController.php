@@ -20,7 +20,7 @@ class ReservationController extends BaseController
     ];
     public $roomsData = 6;
     public $eventsData = 3;
-    public $footerData = null;
+    public $footerData = [];
 
 
     public function index()
