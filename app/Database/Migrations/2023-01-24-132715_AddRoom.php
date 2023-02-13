@@ -8,41 +8,67 @@ class AddRoom extends Migration
 {
     public function up()
     {
+
         $this->forge->addField([
-            'room_id' => [
+            'id' => [
                 'type'           => 'INT',
                 'constraint'     => 5,
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
-            'room_price' => [
-                'type'       => 'INT',
+            'number' => [
+                'type'       => 'VARCHAR',
                 'constraint' => '100',
             ],
-            'room_category' => [
-                'type' => 'VARCHAR',
-                'constraint' => '100',
+            'roomcategory_id' => [
+                'type' => 'int',
                 'null' => true,
             ],
-            'room_max_adults' => [
+            'ac' => [
+                'type'  => "ENUM('AC','NO AC')",
+                'null'  => false
+            ],
+            'roomfood_id' => [
+                'type' => 'int',
+                'null' => true,
+            ],
+            'bedcount' => [
+                'type'       => 'INT',
+                'constraint' => '100',
+            ],
+            'roomcancelationcharges_id' => [
                 'type'       => 'INT',
                 'constraint' => '20',
+                'null' => true,
+
             ],
-            'room_max_children' => [
+            'price' => [
                 'type'       => 'INT',
-                'constraint' => '20',
+                'constraint' => '100',
             ],
-            'room_created_at' => [
+            'status' => [
+                'type'      => "ENUM('unavailable', 'available')",
+                'default'   => "unavailable"    
+            ],
+            'image' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '200',
+            ],
+            'created_at' => [
                 'type'      => 'DATETIME'
             ],
-            'room_updated_at' => [
+            'updated_at' => [
                 'type'      => 'DATETIME'
             ],
-            'room_deleted_at' => [
+            'deleted_at' => [
                 'type'      => 'DATETIME'
             ],
         ]);
-        $this->forge->addKey('room_id', true);
+        $this->forge->addKey('id', true);
+
+        // $this->forge->addForeignKey('roomcategory_id','roomcategories','id', 'CASCADE','CASCADE');
+        // $this->forge->addForeignKey('roomfood_id','roomfoods','id', 'CASCADE','CASCADE');
+        // $this->forge->addForeignKey('roomcancelationcharges_id','roomcancelationcharges','id', 'CASCADE','CASCADE');
         $this->forge->createTable('rooms');
     }
 
