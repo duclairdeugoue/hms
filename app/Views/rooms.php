@@ -9,7 +9,6 @@
 <?= view_cell("\App\Libraries\RenderComponents::viewBreadcrumbs", $breadcrumbsData) ?>
 
 <!-- Search Bar component -->
-<?= view_cell("\App\Libraries\RenderComponents::viewSearchbar") ?>
 
 <!-- Rooms component -->
 <?= view_cell("\App\Libraries\RenderComponents::viewRooms",  $roomsData)?>

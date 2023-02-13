@@ -23,7 +23,6 @@
 <!-- END section -->
 
 <!-- Search Bar components -->
-<?= view_cell("\App\Libraries\RenderComponents::viewSearchbar") ?>
 
 
 <section class="py-5 bg-light">
