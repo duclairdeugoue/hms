@@ -42,5 +42,6 @@ class RoomsController extends BaseController
         ];
 
         return view('rooms', $data);
+
     }
 }
