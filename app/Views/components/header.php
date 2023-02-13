@@ -23,7 +23,7 @@
                     <li class="<?= $navItemAbout ? "active" : "" ?>"><a href="/about">About</a></li>
                     <li class="<?= $navItemEvents ? "active" : "" ?>"><a href="/events">Events</a></li>
                     <li class="<?= $navItemContact ? "active" : "" ?>"><a href="/contact">Contact</a></li>
-                    <li class="<?= $navItemReservation ? "active" : "" ?>"><a href="/reservation">Reservation</a></li>
+                    <!-- <li class="<?= $navItemReservation ? "active" : "" ?>"><a href="/reservation">Reservation</a></li> -->
                   </ul>
                 </div>
               </div>

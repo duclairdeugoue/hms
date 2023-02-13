@@ -4,29 +4,24 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class RoomModel extends Model
+class RoomFoodModel extends Model
 {
-    protected $DBGroup   = 'default';
-    protected $table            = 'rooms';
-    protected $primaryKey       = 'room_id';
+    protected $DBGroup          = 'default';
+    protected $table            = 'roomfoods';
+    protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [
-        'price',
-        'roomcategory_id',
-        'number',
-        'status'
-    ];
+    protected $allowedFields    = ['name'];
 
     // Dates
     protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
-    protected $createdField  = 'room_created_at';
-    protected $updatedField  = 'room_updated_at';
-    protected $deletedField  = 'room_deleted_at';
+    protected $createdField  = 'created_at';
+    protected $updatedField  = 'updated_at';
+    protected $deletedField  = 'deleted_at';
 
     // Validation
     protected $validationRules      = [];
@@ -44,9 +39,4 @@ class RoomModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
-
-
-    public function getAllRooms() {
-        return $this->findAll();
-    }
 }
