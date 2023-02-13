@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use App\Models\RoomCategoryModel;
 
 class RoomModel extends Model
 {
@@ -47,6 +48,9 @@ class RoomModel extends Model
 
 
     public function getAllRooms() {
-        return $this->findAll();
+        return $this->db->table('rooms t1')->join('roomcategories t2', ' t1.roomcategory_id = t2.id')
+        ->get()
+        ->getResultArray();
     }
+
 }
