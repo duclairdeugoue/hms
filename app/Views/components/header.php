@@ -1,7 +1,7 @@
 <header class="site-header js-site-header">
   <div class="container-fluid">
     <div class="row align-items-center">
-      <div class="col-6 col-lg-4 site-logo" data-aos="fade"><a href="index.html">Sogo Hotel</a></div>
+      <div class="col-6 col-lg-4 site-logo" data-aos="fade"><a href="<?= base_url("/")?>">Sogo Hotel</a></div>
       <div class="col-6 col-lg-8">
 
 
