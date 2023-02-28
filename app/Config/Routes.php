@@ -43,7 +43,7 @@ $routes->get('/contact', 'ContactController::index');
 
 $routes->get('/events', 'EventsController::index');
 
-// $routes->get('/reservation', 'ReservationController::index');
+$routes->get('/reservation', 'ReservationController::index');
 
 $routes->get('/rooms', 'RoomsController::index');
 
